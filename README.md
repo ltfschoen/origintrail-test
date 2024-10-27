@@ -5,6 +5,8 @@ OriginTrail
 
 - [Glossary](#glossary)
 
+Note: summarised up to https://docs.origintrail.io/dkg-v6-current-version/autonomous-ai-paranets
+
 ## Glossary <a id="glossary"></a>
 
 * DKG SDK - client library (e.g. [dkg.js](https://docs.origintrail.io/dkg-v6-current-version/dkg-sdk/dkg-v6-js-client)) for apps to interact via APIs to connect to the OriginTrail DKG to enable creation and management of KAs through apps, and perform network queries (e.g. search SPARQL queries)
@@ -43,6 +45,8 @@ OriginTrail
     * HISTORICAL: any previously finalized state, identifiable by state hash.
   * Knowledge Mining
     * process of Knowledge Miners producing high quality, blockchain tracked knowledge for AI leveraging KAs (ownable containers for knowledge with inherent discoverability, connectivity and data provenance) and contributing that useful knowledge to the OriginTrail DKG to receive NEURO tokens as an incentive, where those Knowledge Mining incentives are enabled across multiple blockchains, to drive exponential growth of trusted knowledge in the OriginTrail DKG.
+  
+* QUES - is it the UAL hash or the Knowledge Graph State Proof that is a merkle proof of the network, where you can make data only sit on your node on your device, choose to only sell some anonymous knowledge data, not say that you are selling that publicly, set a fee for that. private knowledge assets sit on our device, then add only those Knowledge Graph triples from pieces of knowledge that you are selling without revealing the entire file, and can prove what you sold was part of the entire data set.
 
 * Decentralised Retrieval Augmented Generation (dRAG) applications framework
   * Applications Framework that allows AI solutions to fetch the relevant facts dynamically from a hybrid mix of external sources (decentralised since organised in a DKG with verifiable sources) for GenAI models before the generation process, limiting the generation to re-working the retrieved inputs, to enhance accuracy and reliability of responses from GenAI models
@@ -64,3 +68,39 @@ OriginTrail
   * RDF Schema (RDFS), Web Ontology Language (OWL) and SHACL (Shapes Constraint Language) are ontology languages that are used to describe RDF data.
     * RDFS provide mechanisms for describing related resources and their relationships, similar to object-oriented programming (OOP) languages and differs in that it describes properties in terms of resource classes. RDF enables querying via the SPARQL query language.
   * SPARQL query language is the standard query language for RDF graphs
+
+* Pipeline
+  * Graph Build - https://graph.build
+    * About
+      * Knowledge Graph where data is inherent in the model
+      * No code required to generate ontology model mind maps
+    * Inputs
+      * Kafka stream, test API or JSON
+    * Outputs 
+      * Knowledge Graph (Gremlin, OpenCypher, etc)
+  * AWS Neptune
+    * Inputs
+      * Use Knowledge Graph as input to AWS Neptune
+    * Features
+      * Analytics
+
+* Tools
+  * Apache Jena / Fuseki (open-source)
+  * Blazegraph (open-source, not actively maintained)
+  * AWS Neptune (closed-source)
+  * Graph Build
+  * Graph ML Neo4j
+  * Gemini + OriginTrail
+
+* Bridge TRAC to Base - https://superbridge.app/
+
+* Workshops - https://github.com/OriginTrail/dkgcon-workshops-2024
+
+* UI - https://github.com/OriginTrail/edge-node-drag
+
+* DPROD (Data Product Ontology) - open-source standard
+  * ekgf.github.io
+  * Data Modelling
+  * edmcouncil.org
+  * ODRL - rights and constraints for data use
+  * goal to get more value and less risk from data, properly link assets
